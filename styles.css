@@ -1,6 +1,7 @@
+
 body {
     margin: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Segoe UI';
 }
 
 .navbar {
@@ -27,7 +28,7 @@ body {
     text-decoration: none;
     color: black;
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .burger {
@@ -39,14 +40,23 @@ body {
     height: 30px;
 }
 
-.main-container,
-.sub-container {
+.container{
+    display: flex;
+    height:100vh;
+}
+.child{
+    flex:1;
+}
+.left{
     background: linear-gradient(to right, #FFF3B1, #FFBBE8);
     display: flex;
-}
+    flex-direction: column;
+    align-items: center;
 
-.child {
-    flex: 1;
+}
+.right{
+    background-image: url("../images/pexels-robin-stickel-70497.jpg");
+    background-size: cover;
 }
 
 .left-header {
@@ -68,66 +78,10 @@ body {
     height: 36px;
 }
 
-.right-img {
-    width: 600px;
-    height: 675px;
-}
-
-.main-content {
-    padding: 110px;
-}
-
-.left-part {
-    display: flex;
-    flex-direction: row;
-    padding: 100px 20px 20px 100px;
-}
-
-.leftpart-1 {
-    display: flex;
-    flex-direction: column;
-}
-
-.leftpart-1-img {
-    padding: 10px;
-    width: 280px;
-    height: 250px;
-}
-
-.leftpart-2-img {
-    padding: 10px;
-    width: 280px;
-    height: 520px;
-}
-.card {
-    margin-top: 200px;
-    background-color: #FF7171;
-    padding: 20px;
-}
-
-.card-text {
-    font-size: 42px;
-    font-weight: 800;
-}
-.card p{
-        display: flex;
-        margin-block-start: 0.4em !important;
-        margin-block-end: 0.4em !important;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-}
-
-.click-btn {
-    display: flex;
-    flex-direction: row;
-}
-
-.click-arrow{
-    padding: 2px;
-    width:18px;
-}
-
-@media screen and (max-width: 768px) {
+@media screen  and (max-width:768px){
+    .container{
+        flex-direction: column;
+    }
     .nav-links {
         display: none;
     }
@@ -145,51 +99,5 @@ body {
 
     .nav-active li {
         margin: 10px 0;
-    }
-
-    .main-container,
-    .sub-container {
-        flex-direction: column;
-    }
-
-    .left {
-        padding: 20px;
-    }
-
-    .right-img {
-        width: 100%;
-        height: auto;
-    }
-    
-    .left-part {
-        flex-direction: column; 
-        padding: 20px;
-    }
-}
-
-@media screen and (min-width: 769px) {
-    .nav-links {
-        display: flex !important;
-    }
-
-    .burger {
-        display: flex;
-    }
-
-    .main-container,
-    .sub-container {
-        flex-direction: row;
-    }
-
-    .left{
-        padding: 110px;
-    }
-    .right-part {
-        padding: 20px;
-    }
-
-    .right-img {
-        width: 800px;
-        height: 675px;
     }
 }
