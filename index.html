@@ -8,26 +8,26 @@
   </head>
   <body>
     <nav class="navbar">
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Order</a></li>
-          <li><a href="#">Food</a></li>
-          <li><a href="#">Resturant</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Contact us</a></li>
-        </ul>
-        <div class="burger">
-          <img
-            class="menu-burger-image"
-            src="../images/menu-bar.png"
-            alt="menu-barimg"
-          />
-        </div>
-      </nav>
-   <div class="container">
-    <div class=" child left">
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Order</a></li>
+        <li><a href="#">Food</a></li>
+        <li><a href="#">Resturant</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+      <div class="burger">
+        <img
+          class="menu-burger-image"
+          src="../images/menu-bar.png"
+          alt="menu-barimg"
+        />
+      </div>
+    </nav>
+    <div class="container">
+      <div class="child left">
         <div>
-        <p class="left-header">LOREM IPSUM</p>
+          <p class="left-header">LOREM IPSUM</p>
           <p class="left-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus<br />
             id est vitae dolor rhoncus tristique. Maecenas metus quam,<br />
@@ -39,17 +39,47 @@
           </p>
           <input type="button" id="button" value="Click Me" />
         </div>
+      </div>
+      <div class="child right"></div>
     </div>
-    <div class=" child right">
-    </div>
-   </div>
-   <script>
-    const burger = document.querySelector(".burger");
-    const nav = document.querySelector(".nav-links");
 
-    burger.addEventListener("click", () => {
-      nav.classList.toggle("nav-active");
-    });
-  </script>
+    <div class="container">
+      <div class="child gallery-left">
+            <div class="gallery">
+                <div class="gallery_item--1">
+                  <img src="../images/pexels-rachel-claire-6752433.jpg" class="gallery_img" alt="Image 1">
+                </div>
+                <div class="gallery_item--2">
+                  <img src="../images/pexels-eva-bronzini-6141651.jpg" class="gallery_img" alt="Image 2">
+                </div>
+                <div class="gallery_item--3">
+                  <img src="../images/pexels-mister-mister-3434523.jpg" class="gallery_img" alt="Image 3">
+                </div>
+              </div>
+      </div>
+      <div class="child gallery-right">
+        <div class="card">
+            <p class="card-header">LOREM IPSUM</p>
+            <p class="card-text">LOREM IPSUM</p>
+            <p class="card-text">SET ADEMIR</p>
+            <div class="click-btn">
+              <p>Click</p>
+              <img
+                class="click-arrow"
+                src="../images/icons8-arrow-30.png"
+                alt="arrow"
+              />
+            </div>
+          </div>
+      </div>
+    </div>
+    <script>
+      const burger = document.querySelector(".burger");
+      const nav = document.querySelector(".nav-links");
+
+      burger.addEventListener("click", () => {
+        nav.classList.toggle("nav-active");
+      });
+    </script>
   </body>
 </html>
