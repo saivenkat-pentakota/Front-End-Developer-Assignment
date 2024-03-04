@@ -108,6 +108,7 @@ body {
 }
 
 .card-text {
+    line-gap-override: 10px;
     font-size: 28px;
     font-weight: 600;
 }
