@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF7171;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+.nav-links li a {
+    padding-right: 60px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.burger {
+    display: flex;
+}
+
+.menu-burger-image {
+    width: 40px;
+    height: 30px;
+}
+
+.main-container,
+.sub-container {
+    background: linear-gradient(to right, #FFF3B1, #FFBBE8);
+    display: flex;
+}
+
+.child {
+    flex: 1;
+}
+
+.left-header {
+    font-size: 44px;
+    font-weight: 600;
+}
+
+.left-text {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+#button {
+    margin-top: 60px;
+    background-color: #FF7171;
+    color: white;
+    border: none;
+    width: 146px;
+    height: 36px;
+}
+
+.right-img {
+    width: 500px;
+    height: 675px;
+}
+
+.main-content {
+    padding: 110px;
+}
+
+.left-part {
+    display: flex;
+    flex-direction: row;
+    padding: 100px 20px 20px 100px;
+}
+
+.leftpart-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.leftpart-1-img {
+    padding: 10px;
+    width: 280px;
+    height: 250px;
+}
+
+.leftpart-2-img {
+    padding: 10px;
+    width: 280px;
+    height: 520px;
+}
+.card {
+    width:280px;
+    height: 200px;
+    margin-top: 200px;
+    background-color: #FF7171;
+    padding: 20px;
+}
+
+.card-text {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.click-btn {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .nav-active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-active li {
+        margin: 10px 0;
+    }
+
+    .main-container,
+    .sub-container {
+        flex-direction: column;
+    }
+
+    .left {
+        padding: 20px;
+    }
+
+    .right-img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .left-part {
+        flex-direction: column; 
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .nav-links {
+        display: flex !important;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .main-container,
+    .sub-container {
+        flex-direction: row;
+    }
+
+    .left{
+        padding: 110px;
+    }
+    .right-part {
+        padding: 20px;
+    }
+
+    .right-img {
+        width: 800px;
+        height: 675px;
+    }
+}

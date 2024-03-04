@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- top-navbar -->
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Order</a></li>
+        <li><a href="#">Food</a></li>
+        <li><a href="#">Resturant</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+      <div class="burger">
+        <img
+          class="menu-burger-image"
+          src="../images/menu-bar.png"
+          alt="menu-barimg"
+        />
+      </div>
+    </nav>
+
+    <main>
+      <!-- main-container -->
+      <div class="main-container">
+        <div class="child left">
+          <p class="left-header">LOREM IPSUM</p>
+          <p class="left-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id
+            est vitae dolor rhoncus tristique. Maecenas metus quam, rhoncus
+            euismod lorem in, sollicitudin viverra eros. Donec dictum luctus
+            quam ut tristique. Curabitur nec faucibus purus. Quisque congue sem
+            nec justo mollis, in tincidunt erat pretium. Sed pulvinar, massa ac
+            porta viverra.
+          </p>
+          <input type="button" id="button" value="Click Me" />
+        </div>
+        <div class="child right">
+          <img
+            class="right-img"
+            src="../images/pexels-robin-stickel-70497.jpg"
+            alt="burgerimg"
+          />
+        </div>
+      </div>
+
+      <!-- sub-container -->
+      <div class="sub-container">
+        <div class="left-part">
+          <div class="leftpart-1">
+            <img
+              class="leftpart-1-img"
+              src="../images/pexels-rachel-claire-6752433.jpg"
+              alt="pexelesimg1"
+            />
+            <img
+              class="leftpart-1-img"
+              src="../images/pexels-eva-bronzini-6141651.jpg"
+              alt="pexelesimg2"
+            />
+          </div>
+          <div class="leftpart-2">
+            <img
+              class="leftpart-2-img"
+              src="../images/pexels-mister-mister-3434523.jpg"
+              alt="pexelesimg2"
+            />
+          </div>
+        </div>
+        <div class="right-part">
+            <div class="card">
+          <p class="card-header">Lorem Ipsum</p>
+          <p class="card-text">LOREM IPSUM<br/>SET ADEMIR</p>
+          <div class="click-btn">
+            <p>Click</p>
+            <img src="../images/icons8-arrow-30.png" alt="arrow" />
+          </div>
+        </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const burger = document.querySelector(".burger");
+      const nav = document.querySelector(".nav-links");
+
+      burger.addEventListener("click", () => {
+        nav.classList.toggle("nav-active");
+      });
+    </script>
+  </body>
+</html>
