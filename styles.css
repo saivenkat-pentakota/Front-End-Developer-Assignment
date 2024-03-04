@@ -100,7 +100,7 @@ body {
     height: 520px;
 }
 .card {
-    width:280px;
+    width:300px;
     height: 200px;
     margin-top: 200px;
     background-color: #FF7171;
@@ -108,14 +108,18 @@ body {
 }
 
 .card-text {
-    line-gap-override: 10px;
-    font-size: 28px;
-    font-weight: 600;
+    font-size: 32px;
+    font-weight: 800;
 }
 
 .click-btn {
     display: flex;
     flex-direction: row;
+}
+
+.click-arrow{
+    padding: 2px;
+    width:18px;
 }
 
 @media screen and (max-width: 768px) {
