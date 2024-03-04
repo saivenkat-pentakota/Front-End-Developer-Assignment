@@ -51,6 +51,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .right {
   background-image: url("../images/pexels-robin-stickel-70497.jpg");
@@ -58,12 +59,12 @@ body {
 }
 
 .left-header {
-  font-size: 44px;
+  font-size: 54px;
   font-weight: 600;
 }
 
 .left-text {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 100;
 }
 
@@ -72,8 +73,8 @@ body {
   background-color: #ff7171;
   color: white;
   border: none;
-  width: 176px;
-  height: 36px;
+  width: 186px;
+  height: 46px;
 }
 
 .gallery-left{
@@ -115,13 +116,14 @@ body {
     grid-row-end: 7;
 }
 
-
-.gallery-right {
-  padding: 80px;
+.gallery-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+
 .card {
-  margin-top: 200px;
   background-color: #ff7171;
   padding: 25px;
 }
