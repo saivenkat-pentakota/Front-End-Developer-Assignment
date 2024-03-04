@@ -116,7 +116,7 @@ body {
     grid-row-end: 7;
 }
 
-.gallery-right{
+.gallery_left,.gallery-right{
     display: flex;
     justify-content: center;
     align-items: center;
